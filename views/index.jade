@@ -4,6 +4,23 @@ block content
 	h1= title
 	p Welcome to our Test
 
+	// USER INFO
+	#userInfo
+	h2 User Info
+		p
+			strong Name:
+			|  <span id='userInfoName'></span>
+			br
+			strong Age:
+			|  <span id='userInfoAge'></span>
+			br
+			strong Gender:
+			|  <span id='userInfoGender'></span>
+			br
+			strong Location:
+			|  <span id='userInfoLocation'></span>
+	// /USER INFO
+
 	//Wrapper
 	#wrapper
 		// User List
@@ -17,3 +34,19 @@ block content
 				tbody
 		// 	/User List
 	//	/Wrapper
+
+	// ADD USER
+	h2 Add User
+	#addUser
+		fieldset
+			input#inputUserName(type='text', placeholder='Username')
+			input#inputUserEmail(type='text', placeholder='Email')
+			br
+			input#inputUserFullname(type='text', placeholder='Full Name')
+			input#inputUserAge(type='text', placeholder='Age')
+			br
+			input#inputUserLocation(type='text', placeholder='Location')
+			input#inputUserGender(type='text', placeholder='gender')
+			br
+			button#btnAddUser Add User
+	// /ADD USER
